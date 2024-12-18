@@ -1,18 +1,16 @@
 #include "app.h"
 
-int main()
-{
-	PRODUCT products[] = {
-		{"Apple", 100, 30},
-		{"Banan", 200, 15},
+int main() {
+    
+    PRODUCT products[2] = {
+        {"Apple", 100, 30},
+        {"Banana", 200, 15}
+    };
 
-	};
+    
+    print_array(products, 2);
 
-	int size = sizeof(products) / sizeof(products[0]);
-
-	print_array(products, size);
-
-	return 0;
+    return 0;
 }
 
 
