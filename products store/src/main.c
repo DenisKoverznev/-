@@ -2,16 +2,17 @@
 
 int main()
 {
-	int sz = sizeof(PRODUCT);
+	PRODUCT products[] = {
+		{"Apple", 100, 30},
+		{"Banan", 200, 15},
 
-	printf("%d\n", sz);
+	};
 
-	PRODUCT product = { "Apple ", 22, 10000 };
+	int size = sizeof(products) / sizeof(products[0]);
 
-	print(&product);
+	print_array(products, size);
 
-	PRODUCT products = { "Banan", 25, 20000 };
-	
 	return 0;
 }
+
 
